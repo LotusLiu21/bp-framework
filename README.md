@@ -1,17 +1,16 @@
 # BP-Framework / 投资人故事线教练
 
-一个基于「BP 要素」PDF 的 WorkBuddy Skill，用于把创业项目的事实材料改写成投资人视角的叙事。
+一套把创业项目事实材料改写成投资人视角叙事的框架与工具集，按「BP 要素」结构化输出故事线与证据账本。
 
 ## 直达链接
 
 ### 🔌 联机（需联网）
 - 仓库主页 / 源文件：https://github.com/LotusLiuXY/bp-framework
-- 在 WorkBuddy 中安装后，用「帮我写 BP」「投资人说我故事不够硬」等触发语即可调用
 
 ### 💾 不联机（本地，无需网络）
-- 将整个 `bp-framework` 目录克隆 / 下载到本地 Skill 目录后即可离线使用：
-  - 用户级：`~/.workbuddy/skills/`
-  - 项目级：`<project>/.workbuddy/skills/`
+- 将整个 `bp-framework` 目录克隆 / 下载到本地技能目录后即可离线使用：
+  - 用户级：`<助手技能目录>/`
+  - 项目级：`<项目>/.skills/`
 - 点击本 README 同级相对链接查看内容：[SKILL.md](./SKILL.md)
 
 ## 核心公式
@@ -43,17 +42,17 @@
 
 ## 安装方式
 
-1. 将整个 `bp-framework` 目录复制到你的 WorkBuddy skills 目录（见上方「不联机」）。
-2. 重启 WorkBuddy 或刷新 skills。
+1. 将整个 `bp-framework` 目录复制到你的 AI 助手技能目录（见上方「不联机」）。
+2. 刷新或重启技能加载。
 3. 触发语：「帮我写 BP」「投资人说我故事不够硬」「诊断我的商业计划书」等。
 
 ## 目录结构
 
-本仓库根目录即 Skill 内容（clone 后整个文件夹就是 `bp-framework` Skill）。
+本仓库根目录即技能内容（clone 后整个文件夹就是 `bp-framework` 技能包）。
 
 ```
-bp-framework/                ← 仓库根目录（也是 Skill 目录）
-├── SKILL.md                       # Skill 入口与触发说明
+bp-framework/                ← 仓库根目录（也是技能目录）
+├── SKILL.md                       # 技能入口与触发说明
 ├── README.md                      # 本文件
 ├── LICENSE                        # MIT 许可证
 ├── references/
@@ -72,27 +71,27 @@ bp-framework/                ← 仓库根目录（也是 Skill 目录）
 
 > 帮我用这个框架写一份 BP，项目是做企业级 AI Agent 的。
 
-Skill 会按 Timing → Vision → Who&Why → Moat → Scale → Proof Points 的顺序提问，并输出一句话 / 30 秒 / 3 分钟版本的故事。
+技能会按 Timing → Vision → Who&Why → Moat → Scale → Proof Points 的顺序提问，并输出一句话 / 30 秒 / 3 分钟版本的故事。
 
 ### 2. 诊断现有 BP
 
 把 BP 内容保存为 `my-bp.md`，然后运行：
 
 ```bash
-python ~/.workbuddy/skills/bp-framework/scripts/bp_diagnostic.py my-bp.md
+python <助手技能目录>/bp-framework/scripts/bp_diagnostic.py my-bp.md
 ```
 
-或直接粘贴 BP 内容给 WorkBuddy，让它用框架做缺口分析。
+或直接粘贴 BP 内容给 AI 助手，让它用框架做缺口分析。
 
 ### 3. 单支柱改写
 
 > 帮我改一下 Moat 这一段，投资人质疑我们没有护城河。
 
-Skill 会调用 `references/cases.md` 中的 NVIDIA CUDA 案例，并输出结构性护城河的叙事句式。
+技能会调用 `references/cases.md` 中的 NVIDIA CUDA 案例，并输出结构性护城河的叙事句式。
 
 ## 内容边界
 
-本 Skill 严格基于原始 PDF，不引入外部框架（SWOT、波特五力等）。
+本框架严格基于原始 PDF，不引入外部框架（SWOT、波特五力等）。
 
 ## 许可证
 
