@@ -2,6 +2,18 @@
 
 一个基于「BP 要素」PDF 的 WorkBuddy Skill，用于把创业项目的事实材料改写成投资人视角的叙事。
 
+## 直达链接
+
+### 🔌 联机（需联网）
+- 仓库主页 / 源文件：https://github.com/LotusLiuXY/bp-framework
+- 在 WorkBuddy 中安装后，用「帮我写 BP」「投资人说我故事不够硬」等触发语即可调用
+
+### 💾 不联机（本地，无需网络）
+- 将整个 `bp-framework` 目录克隆 / 下载到本地 Skill 目录后即可离线使用：
+  - 用户级：`~/.workbuddy/skills/`
+  - 项目级：`<project>/.workbuddy/skills/`
+- 点击本 README 同级相对链接查看内容：[SKILL.md](./SKILL.md)
+
 ## 核心公式
 
 > 好故事 = 不可逆趋势 × 非你不可 × 风险递减路径
@@ -31,9 +43,7 @@
 
 ## 安装方式
 
-1. 将整个 `bp-framework` 目录复制到你的 WorkBuddy skills 目录：
-   - 用户级：`~/.workbuddy/skills/`
-   - 项目级：`<project>/.workbuddy/skills/`
+1. 将整个 `bp-framework` 目录复制到你的 WorkBuddy skills 目录（见上方「不联机」）。
 2. 重启 WorkBuddy 或刷新 skills。
 3. 触发语：「帮我写 BP」「投资人说我故事不够硬」「诊断我的商业计划书」等。
 
