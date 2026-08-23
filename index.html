@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BP-Framework · 投资人故事线教练</title>
+<style>
+  :root{
+    --ink:#3a3a3a; --sub:#6b6b6b; --line:#e7e3dc; --bg:#faf8f4;
+    --card:#ffffff; --accent:#8a7a6d; --soft:#f3efe8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:36px}
+  h1{font-size:30px;margin:0 0 6px;letter-spacing:.5px}
+  .tag{display:inline-block;font-size:13px;color:var(--accent);
+    background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:3px 12px}
+  h2{font-size:19px;margin:38px 0 12px;color:var(--ink)}
+  p{color:var(--sub);margin:10px 0}
+  .formula{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:18px 20px;font-size:17px;color:var(--ink);text-align:center;margin:18px 0}
+  ul{padding-left:20px;color:var(--sub)}
+  li{margin:6px 0}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .box b{color:var(--ink)}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .links a{font-size:14px;color:var(--accent);text-decoration:none;
+    border:1px solid var(--line);border-radius:10px;padding:8px 14px;background:var(--card)}
+  .links a:hover{background:var(--soft)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:13px;color:#9a9a9a}
+  code{background:var(--soft);padding:2px 6px;border-radius:6px;font-size:13px;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>BP-Framework</h1>
+    <span class="tag">投资人故事线教练</span>
+  </header>
+
+  <p>一套把创业项目事实材料改写成投资人视角叙事的框架与工具集，按「BP 要素」结构化输出故事线与证据账本。适用于从零写 BP、诊断现有 BP 缺口、单支柱改写三种场景。</p>
+
+  <div class="formula">好故事 = 不可逆趋势 × 非你不可 × 风险递减路径</div>
+
+  <h2>六支柱框架</h2>
+  <div class="grid">
+    <div class="box"><b>1 · Timing</b><br>抓住时代机遇窗口</div>
+    <div class="box"><b>2 · Vision</b><br>清晰且可信的终局</div>
+    <div class="box"><b>3 · Who &amp; Why</b><br>非你不可</div>
+    <div class="box"><b>4 · Moat</b><br>结构性护城河</div>
+    <div class="box"><b>5 · Scale</b><br>规模化路径可行性</div>
+    <div class="box"><b>6 · Proof Points</b><br>里程碑式验证</div>
+  </div>
+
+  <h2>直达链接</h2>
+  <p>🔌 联机：<a href="https://github.com/LotusLiuXY/bp-framework" style="color:var(--accent)">仓库主页 / 源文件</a></p>
+  <p>💾 不联机：将本目录克隆 / 下载到本地技能目录即可离线使用；点击下方相对链接查看内容。</p>
+  <div class="links">
+    <a href="./SKILL.md">SKILL.md</a>
+    <a href="./README.md">README.md</a>
+    <a href="./references/framework.md">完整框架</a>
+    <a href="./references/cases.md">案例库</a>
+    <a href="./assets/bp-outline-template.md">大纲模板</a>
+    <a href="./scripts/bp_diagnostic.py">诊断脚本</a>
+  </div>
+
+  <h2>快速开始</h2>
+  <p>从零写 BP：用「帮我用这个框架写一份 BP，项目是……」触发，按 Timing → Vision → Who&amp;Why → Moat → Scale → Proof Points 顺序产出一句话 / 30 秒 / 3 分钟版本。</p>
+  <p>诊断现有 BP：</p>
+  <p><code>python &lt;助手技能目录&gt;/bp-framework/scripts/bp_diagnostic.py my-bp.md</code></p>
+
+  <footer>MIT 许可证 · 内容严格基于原始 PDF 框架，不引入外部方法论。</footer>
+</div>
+</body>
+</html>
