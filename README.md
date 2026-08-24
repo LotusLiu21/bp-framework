@@ -4,15 +4,16 @@
 
 ## 直达链接
 
-### 🔌 联机（需联网）
-- 仓库主页 / 源文件：https://github.com/LotusLiuXY/bp-framework
+🔌 联机（需联网）
 
-### 💾 不联机（本地，无需网络）
-- 将整个 `bp-framework` 目录克隆 / 下载到本地技能目录后即可离线使用：
-  - 用户级：`<助手技能目录>/`
-  - 项目级：`<项目>/.skills/`
-- 点击本 README 同级相对链接查看内容：[SKILL.md](./SKILL.md)
+- 根目录直达（单文件）：👉 https://lotusliuxy.github.io/bp-framework/
+- 仓库主页：https://github.com/LotusLiuXY/bp-framework
 
+💾 不联机（本地，无需网络）
+
+下载 / 克隆后，点击本 README 同级相对链接查看内容：[SKILL.md](./SKILL.md)；技能本体为本地文件，无需服务器。
+
+> 单文件落地页（内联 CSS/JS，无外部依赖）可直接访问或下载双击打开；同一相对链接在本地与 GitHub 在线查看时均有效。
 ## 核心公式
 
 > 好故事 = 不可逆趋势 × 非你不可 × 风险递减路径
